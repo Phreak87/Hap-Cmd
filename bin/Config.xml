@@ -1,0 +1,91 @@
+﻿<?xml version="1.0"?>
+<!--
+	HomeKitBridge -> Accessories of Type:
+		 ------------------
+		 Implementierte Klassen
+		 ------------------
+		- * Switch
+		- * TemperatureSensor
+		- * MotionSensor
+		- * Outlet
+		- * SmokeSensor
+		- * CarbonMonoxideSensor
+		- * ContactSensor
+		- * Fan
+		- * HumiditySensor
+		- * ColorfulLightbulb
+		- * DimmableLightbulb
+		- * Lightbulb
+		- * LightSensor
+		- * GarageDoor
+		
+		 ------------------
+		 Unfertige Klassen
+		 ------------------
+		- ? BatteryAccessory
+		- X HorizontalTiltingWindowCovering
+		- * LockableLockMechanism
+		- * LockMechanism
+		- X SecuritySystem
+		- X Thermostat
+		- X VerticalTiltingWindowCovering
+		- X WindowCovering
+-->
+<HAP Mac="" Salt="" Key="">
+    <Accessory>
+        <Label>SwitchTest</Label>
+        <Type>Switch</Type>
+    </Accessory>
+    <Accessory>
+        <Label>TemperatureSensorTest</Label>
+        <Type>TemperatureSensor</Type>
+    </Accessory>
+    <Accessory>
+        <Label>MotionSensorTest</Label>
+        <Type>MotionSensor</Type>
+    </Accessory>
+    <Accessory>
+        <Label>OutletTest</Label>
+        <Type>Outlet</Type>
+    </Accessory>
+    <Accessory>
+        <Label>SmokeSensorTest</Label>
+        <Type>SmokeSensor</Type>
+    </Accessory>
+    <Accessory>
+        <Label>CarbonMonoxideSensorTest</Label>
+        <Type>CarbonMonoxideSensor</Type>
+    </Accessory>
+    <Accessory>
+        <Label>ContactSensorTest</Label>
+        <Type>ContactSensor</Type>
+    </Accessory>
+    <Accessory>
+        <Label>FanTest</Label>
+        <Type>Fan</Type>
+    </Accessory>
+    <Accessory>
+        <Label>HumiditySensorTest</Label>
+        <Type>HumiditySensor</Type>
+    </Accessory>
+    <Accessory>
+        <Label>ColorfulLightbulbTest</Label>
+        <Type>ColorfulLightbulb</Type>
+    </Accessory>
+    <Accessory>
+        <Label>DimmableLightbulbTest</Label>
+        <Type>DimmableLightbulb</Type>
+    </Accessory>
+    <Accessory>
+        <Label>LightbulbTest</Label>
+        <Type>Lightbulb</Type>
+    </Accessory>
+    <Accessory>
+        <Label>LightSensorTest</Label>
+        <Type>LightSensor</Type>
+    </Accessory>
+    <Accessory>
+        <Label>GarageDoorTest</Label>
+        <Type>GarageDoor</Type>
+    </Accessory>
+</HAP>
