@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry excluding="src/" kind="src" path=""/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="lib" path="D:/SubVersion/01_ACCESSIBLE/JamesHome4/Modules_Build/Examples/Emulations/APPLE_Homekit/JP_Git/trunk/Java-Librarys/com.nimbusds.srp6a-1.5.2.jar"/>
+	<classpathentry kind="lib" path="D:/SubVersion/01_ACCESSIBLE/JamesHome4/Modules_Build/Examples/Emulations/APPLE_Homekit/JP_Git/trunk/Java-Librarys/io.netty.netty-all-4.0.32.Final.jar"/>
+	<classpathentry kind="lib" path="D:/SubVersion/01_ACCESSIBLE/JamesHome4/Modules_Build/Examples/Emulations/APPLE_Homekit/JP_Git/trunk/Java-Librarys/jmdns-3.4.1.jar"/>
+	<classpathentry kind="lib" path="D:/SubVersion/01_ACCESSIBLE/JamesHome4/Modules_Build/Examples/Emulations/APPLE_Homekit/JP_Git/trunk/Java-Librarys/net.i2p.crypto.eddsa-0.0.1-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="D:/SubVersion/01_ACCESSIBLE/JamesHome4/Modules_Build/Examples/Emulations/APPLE_Homekit/JP_Git/trunk/Java-Librarys/org.bouncycastle.bcprov-jdk15on-1.51.jar"/>
+	<classpathentry kind="lib" path="D:/SubVersion/01_ACCESSIBLE/JamesHome4/Modules_Build/Examples/Emulations/APPLE_Homekit/JP_Git/trunk/Java-Librarys/org.glassfish.javax.json-1.0.4.jar"/>
+	<classpathentry kind="lib" path="D:/SubVersion/01_ACCESSIBLE/JamesHome4/Modules_Build/Examples/Emulations/APPLE_Homekit/JP_Git/trunk/Java-Librarys/org.zeromq.curve25519-java-0.1.0.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

@@ -1,0 +1,107 @@
+Imports com.beowulfe.hap.HomekitRoot
+Imports com.beowulfe.hap.HomekitServer
+
+Public Class Form1
+
+    Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+
+    End Sub
+
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+        Dim homekit As New com.beowulfe.hap.HomekitServer(9123)
+        Dim bridge As com.beowulfe.hap.HomekitRoot = homekit.createBridge(New MockAuthInfo, "Test Bridge", "TestBridge, Inc.", "G6", "111abe234")
+        bridge.addAccessory(New MockSwitch)
+        bridge.start()
+    End Sub
+End Class
+
+Public Class MockAuthInfo
+    Implements com.beowulfe.hap.HomekitAuthInfo
+
+    Dim userKeyMap As New Dictionary(Of String, Byte())
+
+    Public Sub createUser(ByVal str As String, ByVal barr() As Byte) Implements com.beowulfe.hap.HomekitAuthInfo.createUser
+        userKeyMap.Add(str, barr)
+    End Sub
+
+    Public Function getMac() As String Implements com.beowulfe.hap.HomekitAuthInfo.getMac
+        Return com.beowulfe.hap.HomekitServer.generateMac
+    End Function
+
+    Public Function getPin() As String Implements com.beowulfe.hap.HomekitAuthInfo.getPin
+        Return "031-45-154"
+    End Function
+
+    Public Function getPrivateKey() As Byte() Implements com.beowulfe.hap.HomekitAuthInfo.getPrivateKey
+        Return com.beowulfe.hap.HomekitServer.generateKey
+    End Function
+
+    Public Function getSalt() As java.math.BigInteger Implements com.beowulfe.hap.HomekitAuthInfo.getSalt
+        Return com.beowulfe.hap.HomekitServer.generateSalt
+    End Function
+
+    Public Function getUserPublicKey(ByVal str As String) As Byte() Implements com.beowulfe.hap.HomekitAuthInfo.getUserPublicKey
+        Return userKeyMap(str)
+    End Function
+
+    Public Function hasUser() As Boolean Implements com.beowulfe.hap.HomekitAuthInfo.hasUser
+        Return True
+    End Function
+
+    Public Sub removeUser(ByVal str As String) Implements com.beowulfe.hap.HomekitAuthInfo.removeUser
+        userKeyMap.Remove(str)
+    End Sub
+End Class
+
+Public Class MockSwitch
+    Implements com.beowulfe.hap.accessories.Lightbulb
+
+    Public Function getLightbulbPowerState() As java.util.concurrent.CompletableFuture Implements com.beowulfe.hap.accessories.Lightbulb.getLightbulbPowerState
+        Return New java.util.concurrent.CompletableFuture()
+    End Function
+
+    Public Function getServices() As java.util.Collection Implements com.beowulfe.hap.accessories.Lightbulb.getServices
+        Return Nothing
+    End Function
+
+    Public Function setLightbulbPowerState(ByVal b As Boolean) As java.util.concurrent.CompletableFuture Implements com.beowulfe.hap.accessories.Lightbulb.setLightbulbPowerState
+        Console.WriteLine(b)
+        Return New java.util.concurrent.CompletableFuture()
+    End Function
+
+    Public Sub subscribeLightbulbPowerState(ByVal hccc As com.beowulfe.hap.HomekitCharacteristicChangeCallback) Implements com.beowulfe.hap.accessories.Lightbulb.subscribeLightbulbPowerState
+
+    End Sub
+
+    Public Sub unsubscribeLightbulbPowerState() Implements com.beowulfe.hap.accessories.Lightbulb.unsubscribeLightbulbPowerState
+
+    End Sub
+
+    Public Function getId() As Integer Implements com.beowulfe.hap.HomekitAccessory.getId
+        Return 2
+    End Function
+
+    Public Function getLabel() As String Implements com.beowulfe.hap.HomekitAccessory.getLabel
+        Return "TestLabel"
+    End Function
+
+    Public Function getManufacturer() As String Implements com.beowulfe.hap.HomekitAccessory.getManufacturer
+        Return "TestManufacturer"
+    End Function
+
+    Public Function getModel() As String Implements com.beowulfe.hap.HomekitAccessory.getModel
+        Return "TestModell"
+    End Function
+
+    Public Function getSerialNumber() As String Implements com.beowulfe.hap.HomekitAccessory.getSerialNumber
+        Return ""
+    End Function
+
+    Public Function getServices1() As java.util.Collection Implements com.beowulfe.hap.HomekitAccessory.getServices
+        Return Nothing
+    End Function
+
+    Public Sub identify() Implements com.beowulfe.hap.HomekitAccessory.identify
+
+    End Sub
+End Class
