@@ -1,27 +1,7 @@
 <?xml version="1.0"?>
 <HAP>
 	<Accessory id="2">
-		<Label>Switch1</Label>
-		<Type>Switch</Type>
-	</Accessory>
-	<Accessory id="3">
-		<Label>Switch2</Label>
-		<Type>Switch</Type>
-	</Accessory>
-	<Accessory id="4">
-		<Label>Switch3</Label>
-		<Type>Switch</Type>
-	</Accessory>
-	<Accessory id="5">
-		<Label>Switch4</Label>
-		<Type>Switch</Type>
-	</Accessory>
-	<Accessory id="6">
-		<Label>Temp1</Label>
-		<Type>TemperatureSensor</Type>
-	</Accessory>
-	<Accessory id="7">
-		<Label>Temp1</Label>
-		<Type>MotionSensor</Type>
+		<Label>WindowCovering</Label>
+		<Type>WindowCovering</Type>
 	</Accessory>
 </HAP>

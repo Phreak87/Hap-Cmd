@@ -321,15 +321,15 @@ public class Main {
 		            	_HorizontalTiltingWindowCovering HAS_HORTILTWIN = new com.beowulfe.hap.accessories.predefined._HorizontalTiltingWindowCovering(ID, Label);
 		            	bridge.addAccessory(HAS_HORTILTWIN);dictionary.put(ID,HAS_HORTILTWIN);break;
 		            case "SecuritySystem": 
-		            	System.out.println(ID + ": Configure HorizontalTiltingWindowCovering " + Label); 
+		            	System.out.println(ID + ": Configure SecuritySystem " + Label); 
 		            	_SecuritySystem HAS_SECSYS = new com.beowulfe.hap.accessories.predefined._SecuritySystem(ID, Label,CurrentSecuritySystemState.DISARMED,TargetSecuritySystemState.DISARMED,SecuritySystemAlarmType.CLEARED);
 		            	bridge.addAccessory(HAS_SECSYS);dictionary.put(ID,HAS_SECSYS);break;
 		            case "VerticalTiltingWindowCovering": 
-		            	System.out.println(ID + ": Configure HorizontalTiltingWindowCovering " + Label); 
+		            	System.out.println(ID + ": Configure VerticalTiltingWindowCovering " + Label); 
 		            	_VerticalTiltingWindowCovering HAS_VERTILTWIN = new com.beowulfe.hap.accessories.predefined._VerticalTiltingWindowCovering(ID, Label);
 		            	bridge.addAccessory(HAS_VERTILTWIN);dictionary.put(ID,HAS_VERTILTWIN);break;
 		            case "WindowCovering": 
-		            	System.out.println(ID + ": Configure HorizontalTiltingWindowCovering " + Label); 
+		            	System.out.println(ID + ": Configure WindowCovering " + Label); 
 		            	_WindowCovering HAS_WINCOV = new com.beowulfe.hap.accessories.predefined._WindowCovering(ID, Label);
 		            	bridge.addAccessory(HAS_WINCOV);dictionary.put(ID,HAS_WINCOV);break;
 

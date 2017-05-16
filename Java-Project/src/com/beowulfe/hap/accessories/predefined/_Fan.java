@@ -114,7 +114,7 @@ public class _Fan implements Fan {
 	public CompletableFuture<Void>    setRotationSpeed(Integer speed) throws Exception {
 		SpeVal = speed;
 		if (SpeCB != null) {SpeCB.changed();}
-		System.out.println(ID + "_Spe@" + Label + " is now " + SpeCB);
+		System.out.println(ID + "_Spe@" + Label + " is now " + SpeVal);
 		return CompletableFuture.completedFuture(null);
 	}
 
